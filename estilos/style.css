@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+/*--------------------------------Configurações Globais--------------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 90vw;
+    margin: auto;
+    border-radius: 20px;
+    font-family: var(--f3);
+}
+
+li {
+    list-style-type: "";
+}
+
+h1 {
+    font-family: var(--f1);
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px;
+}
+
+h2 {
+    font-family: var(--f2);
+    text-align: center;
+    color: var(--c1);
+    text-shadow: 0px 0px 0px 1px var(--c-2);
+    margin: 40px 20px 40px 20px;
+}
+
+h3 {
+    font-family: var(--f3);
+    font-size: 1em;
+    text-align: center;
+    margin: 20px;
+    color: var(--c-2);
+}
+
+p {
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.2em;
+    text-indent: 1.5em;
+}
+
+:root {
+    /*Declaração de Variávies*/
+    --c-2: rgba(0, 0, 0, 0.500);
+    /*Textos Sombreados*/
+    --c-1: black;
+    --c0: snow;
+    --c1: #83e1ad;
+    --c2: #3ddc84;
+    --c3: #2fa866;
+    --c4: #1a5c37;
+    --c5: #063d1e;
+
+    --f1: 'Times New Roman', Times, serif;
+    --f2: Arial, Helvetica, sans-serif;
+    --f3: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+@media screen and (min-width:762px) {
+    body {
+        width: 745px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 4px var(--c-1);
+        margin: auto;
+    }
+
+    footer {
+        border-radius: 0px 0px 20px 20px;
+    }
+}
+
+/* body,main,header,footer,h1,h2,h3,p,#video,article{
+    border: 1px dotted black;
+} */
+
+/*--------------------------------Configurações Globais--------------------------------*/
+
+
+/*--------------------------------Configurações header--------------------------------*/
+header {
+    padding: 10px;
+}
+
+header strong {
+    font-size: 1.3em;
+    color: var(--c1);
+}
+
+#video {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 1px;
+    box-shadow: 0px 0px 8px var(--c1);
+}
+
+/*--------------------------------Configurações header--------------------------------*/
+
+/*--------------------------------Configurações main--------------------------------*/
+main a {
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    color: var(--c0);
+    background-color: var(--c1);
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px var(--c-2);
+    width: 300px;
+}
+
+main a:hover {
+    color: var(--c-1);
+}
+
+main {
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#result {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+img.compar {
+    width: 100px;
+    margin: 5px;
+}
+
+img.draw {
+    width: 200px;
+    margin: 5px;
+}
+
+#s-1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 75px;
+}
+
+#s-1 p {
+    width: 320px;
+}
+
+
+#attest {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    gap: 20px;
+}
+
+#attest div {
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 1px var(--c-2);
+    overflow: hidden;
+}
+
+#attest p,
+#attest img {
+    display: block;
+    margin: auto;
+    text-indent: 0px;
+    text-align: center;
+}
+
+#attest .min-a {
+    margin-top: 10px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px var(--c1);
+}
+
+#attest .compar-a {
+    width: 220px;
+    display: block;
+}
+
+/*--------------------------------Configurações main--------------------------------*/
+
+/*--------------------------------Configurações footer--------------------------------*/
+footer {
+    background-color: var(--c1);
+    padding: 10px;
+}
+
+footer h2 {
+    font-size: 1em;
+    color: var(--c0);
+    box-shadow: 0px 0px 0px var(--c-2)
+}
+
+footer p {
+    color: var(--c0);
+    box-shadow: 0px 0px 0px var(--c-2);
+    font-size: 0.8em;
+}
+
+footer strong {
+    color: var(--c-1);
+}
+
+#logo {
+    display: block;
+    height: 75px;
+    width: 75px;
+    margin: auto;
+}
+
+footer nav {
+    border: 1px solid var(--c0);
+    margin: auto;
+    border-radius: 15px;
+    padding: 3px;
+    width: 300px;
+    text-align: center;
+
+}
+
+footer a,
+footer span {
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--c0);
+    text-shadow: 0px 0px 0px 1px var(--c-2);
+    cursor: pointer;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#copy {
+    text-indent: 0px;
+    text-align: center;
+}
+
+/*--------------------------------Configurações footer--------------------------------*/
