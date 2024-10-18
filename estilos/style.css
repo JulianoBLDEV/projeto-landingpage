@@ -58,9 +58,16 @@ a.cta {
     transition: .5s;
 }
 
+@keyframes cta {
+    from {
+        transform: scale(1.1);
+    }
+}
+
 a.cta:hover {
     color: var(--c-1);
     background-color: var(--c3);
+    animation: cta 1s infinite alternate;
 }
 
 p,
@@ -228,6 +235,82 @@ img.min-a {
 
 .s-sponsion {
     background-color: var(--c-4);
+}
+
+section.q-a>h2.q {
+    text-align: left;
+    margin: 20px 20px 0px 20px;
+}
+
+section.q-a>div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-flow: row nowrap;
+    position: relative;
+    margin: 20px 0;
+
+}
+
+.symbol::before,
+.symbol::after {
+    content: '';
+    background-color: var(--c1);
+    border-radius: 15px;
+
+    position: absolute;
+    left: calc(100% - 30px);
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.symbol::before {
+    width: 5px;
+    height: 20px;
+}
+
+.symbol::after {
+    width: 20px;
+    height: 5px;
+}
+
+.symbol.active::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+    left: calc(100% - 30px);
+}
+
+
+section.q-a>p {
+    text-indent: 0px;
+    padding: 0px 20px 20px 20px;
+    display: none;
+    animation: toggleanswer 1s;
+}
+
+@keyframes toggleanswer {
+    from {
+        transform: translateY(-20px);
+    }
+}
+
+section.q-a>p.active {
+    display: block;
+}
+
+
+section.q-a h2.q {
+    text-shadow: 0px 0px 10px 5px var(--c-2);
+    transition: .5s;
+    cursor: pointer;
 }
 
 
