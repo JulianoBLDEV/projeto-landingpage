@@ -56,18 +56,18 @@ a.cta {
     box-shadow: 0px 0px 4px var(--c-2);
     width: 80vw;
     transition: .5s;
+    animation: cta 1s infinite alternate;
 }
 
 @keyframes cta {
     from {
-        transform: scale(1.1);
+        transform: scale(1.07);
     }
 }
 
 a.cta:hover {
     color: var(--c-1);
     background-color: var(--c3);
-    animation: cta 1s infinite alternate;
 }
 
 p,
