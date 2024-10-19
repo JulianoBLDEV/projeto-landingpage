@@ -10,6 +10,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    outline: 0;
 }
 
 body {
@@ -34,6 +35,7 @@ h2 {
     text-align: center;
     color: var(--c1);
     text-shadow: 0px 0px 0px 1px var(--c-2);
+    margin: 0px 10px;
 }
 
 h3 {
@@ -75,7 +77,7 @@ li {
     margin: 10px auto;
     padding: 20px;
     text-align: justify;
-    line-height: 1.2em;
+    line-height: 1.5em;
     text-indent: 1.5em;
     list-style-position: inside;
     width: auto;
@@ -115,15 +117,61 @@ img {
     }
 
     a.cta {
-        width: 300px;
+        width: 350px;
     }
 
-    .result {
+  .s-1 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0px 75px;
+    }
+
+    .s-1 div{
+        gap: 15px;
+    }
+
+    .s-profit div{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0px 10px;
+    }
+
+    li, .s-product p,footer p,.s-sponsion p{
+        width: 350px;
+    }
+   
+    .s-product div{
+        display: flex;
+        margin: 0px 20px;
+    }
+
+    .s-special2 div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 0px;
+    }
+
+    .s-special2 div img{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .s-sponsion{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        padding:20px;
     }
-
+   
     footer {
         display: flex;
         flex-flow: row wrap;
@@ -135,16 +183,10 @@ img {
 
     footer p {
         width: 300px;
+        padding: 0px;
     }
 
-    .s-1 {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 0px 75px;
-    }
-
+  
 }
 
 /* body,main,header,footer,h1,h2,h3,p,.video,article{
@@ -187,7 +229,7 @@ img.compar {
     display: inline-block;
 }
 
-.s-1 {
+.s-1, .s-special {
     background-color: var(--c-3);
 }
 
@@ -195,9 +237,30 @@ img.compar {
     text-align: center;
 }
 
+.result{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
 .s-product,
 .s-profit {
     text-align: center;
+}
+.s-attest{
+    margin: 0px 10px;
+    padding: 10px;
+}
+.attest{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
 }
 
 .s-attest div {
@@ -286,6 +349,10 @@ section.q-a>div {
 .symbol.active::before {
     transform: translate(-50%, -50%) rotate(90deg);
     left: calc(100% - 30px);
+    background-color: black;
+}
+.symbol.active::after {
+    background-color: black;
 }
 
 
@@ -306,10 +373,13 @@ section.q-a>p {
     }
 }
 
+h2.active{
+    color: black;
+}
+
 section.q-a>p.active {
     display: block;
 }
-
 
 section.q-a h2.q {
     text-shadow: 0px 0px 10px 5px var(--c-2);
@@ -330,7 +400,7 @@ footer {
 footer h2 {
     font-size: 1em;
     color: var(--c0);
-    box-shadow: 0px 0px 0px var(--c-2)
+    box-shadow: 0px 0px 0px var(--c-2);
 }
 
 footer p {
