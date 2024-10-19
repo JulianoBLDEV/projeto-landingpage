@@ -293,12 +293,16 @@ section.q-a>p {
     text-indent: 0px;
     padding: 0px 20px 20px 20px;
     display: none;
-    animation: toggleanswer 1s;
+    animation: toggleanswer 1s; /*chamando a animação 'toggleanswer'*/
 }
 
-@keyframes toggleanswer {
+@keyframes toggleanswer { /*Criação de uma animação com o nome 'toggleanswer'*/
     from {
         transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0px);
     }
 }
 
@@ -312,53 +316,6 @@ section.q-a h2.q {
     transition: .5s;
     cursor: pointer;
 }
-
-
-
-
-
-/* .attest {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: space-evenly;
-    gap: 20px;
-} */
-
-
-
-
-
-/* .s-3 {
-    margin: 50px 10px;
-}
-
-.s-4 {
-
-    padding: 10px 0px;
-}
-
-.s-1 p {
-    width: 320px;
-} */
-
-
-
-/* section.s-2 div {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-
-}
-
-section.s-2 li {
-    list-style-position: inside;
-    width: auto;
-    margin: 40px;
-    list-style-type: '\02714\00A0\00A0';
-} */
-
 
 /*--------------------------------Configurações main--------------------------------*/
 
