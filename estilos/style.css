@@ -148,10 +148,15 @@ img {
         width: 350px;
     }
    
-    .s-product div{
+    .s-product-end div{
         display: flex;
         margin: 0px 20px;
     }
+    .s-product{
+   flex-wrap: nowrap;
+    }
+
+
 
     .s-special2 div{
         display: flex;
@@ -210,6 +215,15 @@ header strong {
     color: var(--c1);
 }
 
+header> p.pages {
+    text-align: center;
+    font-size: 0.8em;
+}
+p.pages strong{
+color: var(--c-1);
+}
+
+
 .video {
     margin: auto;
     height: 100px;
@@ -241,7 +255,7 @@ img.compar {
     text-align: center;
 }
 
-.result{
+.result, .s-product{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -249,6 +263,7 @@ img.compar {
     align-content: center;
     gap: 10px;
 }
+
 
 .s-product,
 .s-profit {
@@ -325,6 +340,7 @@ section.q-a>div {
     flex-flow: row nowrap;
     position: relative;
     margin: 20px 0;
+    cursor: pointer;
 
 }
 
@@ -364,21 +380,27 @@ section.q-a>p {
     text-indent: 0px;
     padding: 0px 20px 20px 20px;
     display: none;
-    animation: toggleanswer 1s; /*chamando a animação 'toggleanswer'*/
+    animation: toggleanswer 1.2s; /*chamando a animação 'toggleanswer'*/
 }
 
 @keyframes toggleanswer { /*Criação de uma animação com o nome 'toggleanswer'*/
     from {
         transform: translateY(-20px);
+        opacity: 0;
     }
 
     to {
         transform: translateY(0px);
+        opacity: 1;
     }
 }
 
-h2.active{
+.question h2{
+    transition: color 0.6s;
+}
+.question h2.active{
     color: black;
+    transition: color 1.2s;
 }
 
 section.q-a>p.active {
@@ -410,6 +432,7 @@ footer h2 {
 footer p {
     color: var(--c0);
     box-shadow: 0px 0px 0px var(--c-2);
+    text-shadow: 0px 0px 0px 1px var(--c-2);
     font-size: 0.8em;
 }
 
